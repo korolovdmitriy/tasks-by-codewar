@@ -11,6 +11,7 @@
 //   if (b.length === 0) {
 //     return a;
 //   }
+
 //   for (let i = 0; i < b.length; i++) {
 //     for (let x = 0; x < a.length; x++) {
 //       if (b[i] === a[x]) {
@@ -19,6 +20,7 @@
 //       }
 //     }
 //   }
+
 //     return a;
 // }
 
@@ -35,6 +37,7 @@
 
 // function digital_root(n) {
 //   let result = 0;
+
 //   while (n > 9) {
 //   let arrayNumber = n.toString().split("");
 //   for (let digit of arrayNumber) {
@@ -46,5 +49,6 @@
 //     result = 0;
 // }
 // }
+
 //   return n;
 // }

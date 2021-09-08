@@ -3,8 +3,9 @@
 // Determine the number of times where two integers in the array have a difference of n.
 
 // const intDiff = (arr, n) => {
-//   // your code goes here
+
 //   let result = 0;
+
 //   for (let i = 1; i < arr.length; i ++){
 //     for (let x = 0; x < i; x ++) {
 //       if (Math.abs(arr[x] - arr[i]) === n){
@@ -12,6 +13,7 @@
 //      }
 //   }
 //   }
+
 //   return result;
 // }
 
@@ -26,6 +28,7 @@
 // function divisors(integer) {
 //   let arr = [];
 //   let count = 0;
+
 //   for (let i = 1; i < 10 || i < integer; i++) {
 //     if (integer % i === 0){
 //       if (i === 1 || i === integer) {
@@ -35,9 +38,11 @@
 //       count ++;
 //     }
 //   }
+
 //   if (count === 0) {
 //     return  `${integer} is prime`;
 //   }
+
 //   return arr;
 // }
 
