@@ -180,7 +180,7 @@
 //         result.push(element);
 //     }
 
-//     return result;
+//     return result.join(" ");
 // }
 
 // console.log(spinWords("Welcome"));
