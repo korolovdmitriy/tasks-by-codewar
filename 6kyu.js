@@ -198,31 +198,78 @@
 // Should return: 160 (the only even number)
 
 
-function findOutlier(integers) {
-    let evenNumbers = 0;
-    let oddNumbers = 0;
-    let resultEven = 0;
-    let resultOdd = 0;
+// function findOutlier(integers) {
+//     let evenNumbers = 0;
+//     let oddNumbers = 0;
+//     let resultEven = 0;
+//     let resultOdd = 0;
 
-    for (const element of integers) {
+//     for (const element of integers) {
              
-        if (element % 2 === 0) {
-            evenNumbers++;
-            resultEven = element;
-            continue;
-        }
+//         if (element % 2 === 0) {
+//             evenNumbers++;
+//             resultEven = element;
+//             continue;
+//         }
 
-        oddNumbers++;
-        resultOdd = element;
-    }
+//         oddNumbers++;
+//         resultOdd = element;
+//     }
 
-    if (evenNumbers > oddNumbers) {
-        return resultOdd;
-    }
+//     if (evenNumbers > oddNumbers) {
+//         return resultOdd;
+//     }
 
-    return resultEven;
-}
+//     return resultEven;
+// }
 
-console.log(findOutlier([0, 1, 2])); //1
-console.log(findOutlier([1, 2, 3])); //2
-console.log(findOutlier([2,6,8,10,3])); //3
+// console.log(findOutlier([0, 1, 2])); //1
+// console.log(findOutlier([1, 2, 3])); //2
+// console.log(findOutlier([2,6,8,10,3])); //3
+
+
+// ======== Count the number of Duplicates ========
+// Count the number of Duplicates
+// Write a function that will return the count of distinct case -insensitive alphabetic characters and numeric digits that occur more than once in the input string. 
+// The input string can be assumed to contain only alphabets(both uppercase and lowercase) and numeric digits.
+
+// Example
+// "abcde" -> 0 # no characters repeats more than once
+// "aabbcde" -> 2 # 'a' and 'b'
+// "aabBcde" -> 2 # 'a' occurs twice and 'b' twice (`b` and `B`)
+// "indivisibility" -> 1 # 'i' occurs six times
+// "Indivisibilities" -> 2 # 'i' occurs seven times and 's' occurs twice
+// "aA11" -> 2 # 'a' and '1'
+// "ABBA" -> 2 # 'A' and 'B' each occur twice
+
+// function duplicateCount(text) {
+//     let array = text.toLowerCase().split("");
+//     let count = 0;
+//     let control = "";
+
+//     for (let i = 0; i < array.length; i++) {
+        
+//         for (let x = i + 1; x < array.length; x++) {
+        
+//             if (array[i] === array[x]) {
+//                 array.splice(x, 1);
+//                 x--;
+//                 control = array[i];
+//             }
+//         }
+
+//         if (array[i] === control) {
+//             count++;
+//         }       
+//     }
+
+//     return count;
+    
+// }
+
+// console.log(duplicateCount("")); //0
+// console.log(duplicateCount("abcde")); //0
+// console.log(duplicateCount("aabbcde")); //2
+// console.log(duplicateCount("aabBcde")); //2
+// console.log(duplicateCount("Indivisibility")); //1
+// console.log(duplicateCount("Indivisibilities")); //2
