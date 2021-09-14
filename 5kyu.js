@@ -97,7 +97,7 @@
 //     for (let i = 0; i < array.length; i++) {
 //         let count = 0;
 //         for (let x = 0; x < array.length; x++) {
-//             if (array[i].toUpperCase() === array[x].toUpperCase() && i !== x) {
+//             if (array[i].toLowerCase() === array[x].toLowerCase() && i !== x) {
 //                 count ++;
 //             };            
 //         };
@@ -109,7 +109,19 @@
 // return "";
 // }
 
-console.log(firstNonRepeatingLetter('aAA'));
+
+// === BEST SOLUTION ===
+// function firstNonRepeatingLetter(s) {
+//     for (const i in s) {
+//         if (s.match(new RegExp(s[i], "gi")).length === 1) {
+//             return s[i];
+//         }
+//     }
+//    return ""; 
+// }
+
+
+console.log(firstNonRepeatingLetter('a'));
 console.log(firstNonRepeatingLetter('streSS'));
 console.log(firstNonRepeatingLetter('moonmen'));
 
