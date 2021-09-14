@@ -46,4 +46,33 @@
 // console.log(humanReadable(359999));
 
 
-  
+
+// ======= Simple Pig Latin =======
+// Move the first letter of each word to the end of it, then add "ay" to the end of the word. 
+// Leave punctuation marks untouched.
+
+// Examples
+// pigIt('Pig latin is cool'); // igPay atinlay siay oolcay
+// pigIt('Hello world !');     // elloHay orldway !
+
+// function pigIt(str){
+//     let arrayOfStr = str.split(" ");
+//     console.log(arrayOfStr);
+//     for (let i = 0; i < arrayOfStr.length; i++) {
+//         if (/[,.?!\-]/.test(arrayOfStr[i])) {
+//             continue;
+//         };
+//         let arrayOfWord = arrayOfStr[i].split("");
+//         arrayOfWord.push(arrayOfWord[0], "ay");
+//         arrayOfWord.shift();
+//         arrayOfStr[i] = arrayOfWord.join("");
+//         console.log(arrayOfWord);
+//     };
+
+//     return arrayOfStr.join(" ");
+// }
+
+// console.log(pigIt('Hello world !'));
+
+// Test.assertEquals(pigIt('Pig latin is cool'),'igPay atinlay siay oolcay')
+// Test.assertEquals(pigIt('This is my string'),'hisTay siay ymay tringsay')
