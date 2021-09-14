@@ -76,3 +76,60 @@
 
 // Test.assertEquals(pigIt('Pig latin is cool'),'igPay atinlay siay oolcay')
 // Test.assertEquals(pigIt('This is my string'),'hisTay siay ymay tringsay')
+
+
+
+
+// ======= First non-repeating character =======
+// Write a function named first_non_repeating_letter that takes a string input,
+// and returns the first character that is not repeated anywhere in the string.
+// For example, if given the input 'stress', the function should return 't',
+// since the letter t only occurs once in the string, and occurs first in the string.
+// As an added challenge, upper - and lowercase letters are considered the same character,
+// but the function should return the correct case for the initial letter.For example,
+// the input 'sTreSS' should return 'T'.
+// If a string contains all repeating characters, it should return an empty string ("") or None -- see sample tests.
+
+
+// function firstNonRepeatingLetter(s) {
+//     const array = s.split("");
+
+//     for (let i = 0; i < array.length; i++) {
+//         let count = 0;
+//         for (let x = 0; x < array.length; x++) {
+//             if (array[i].toUpperCase() === array[x].toUpperCase() && i !== x) {
+//                 count ++;
+//             };            
+//         };
+
+//         if (count === 0) {
+//             return array[i];
+//         }
+//     };
+// return "";
+// }
+
+console.log(firstNonRepeatingLetter('aAA'));
+console.log(firstNonRepeatingLetter('streSS'));
+console.log(firstNonRepeatingLetter('moonmen'));
+
+// Test.assertEquals(firstNonRepeatingLetter('a'), 'a');
+// Test.assertEquals(firstNonRepeatingLetter('stress'), 't');
+// Test.assertEquals(firstNonRepeatingLetter('moonmen'), 'e');
+
+
+// ======= Pete, the baker =======
+// Pete likes to bake some cakes. He has some recipes and ingredients. 
+// Unfortunately he is not good in maths.Can you help him to find out, 
+// how many cakes he could bake considering his recipes ?
+// Write a function cakes(), which takes the recipe (object)
+//  and the available ingredients(also an object) and returns the 
+// maximum number of cakes Pete can bake(integer).
+// For simplicity there are no units for the amounts(e.g. 1 lb of flour or 200 g of sugar are simply 1 or 200).
+// Ingredients that are not present in the objects, can be considered as 0.
+// Examples:
+// // must return 2
+// cakes({flour: 500, sugar: 200, eggs: 1}, {flour: 1200, sugar: 1200, eggs: 5, milk: 200}); 
+// // must return 0
+// cakes({apples: 3, flour: 300, sugar: 150, milk: 100, oil: 100}, {sugar: 500, flour: 2000, milk: 2000}); 
+// ALGORITHMS
