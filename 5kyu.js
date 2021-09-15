@@ -91,6 +91,7 @@
 // If a string contains all repeating characters, it should return an empty string ("") or None -- see sample tests.
 
 
+// === FIRST SOLUTION ===
 // function firstNonRepeatingLetter(s) {
 //     const array = s.split("");
 
@@ -121,9 +122,9 @@
 // }
 
 
-console.log(firstNonRepeatingLetter('a'));
-console.log(firstNonRepeatingLetter('streSS'));
-console.log(firstNonRepeatingLetter('moonmen'));
+// console.log(firstNonRepeatingLetter('a'));
+// console.log(firstNonRepeatingLetter('streSS'));
+// console.log(firstNonRepeatingLetter('moonmen'));
 
 // Test.assertEquals(firstNonRepeatingLetter('a'), 'a');
 // Test.assertEquals(firstNonRepeatingLetter('stress'), 't');
@@ -145,3 +146,39 @@ console.log(firstNonRepeatingLetter('moonmen'));
 // // must return 0
 // cakes({apples: 3, flour: 300, sugar: 150, milk: 100, oil: 100}, {sugar: 500, flour: 2000, milk: 2000}); 
 // ALGORITHMS
+
+
+
+
+// ======= Valid Parentheses =======
+// Write a function that takes a string of parentheses, and determines if the order of the parentheses is valid. 
+// The function should return true if the string is valid, and false if it's invalid.
+// Examples
+// "()"              =>  true
+// ")(()))"          =>  false
+// "("               =>  false
+// "(())((()())())"  =>  true
+
+// function validParentheses(parens){
+//     let count = 0;
+//     for (let i = 0; i < parens.length; i++) {
+//         if (parens[i] === "(") {
+//             count ++;
+//         } else {
+//             count--;
+//         };
+//         if (count < 0) {
+//             return false;
+//         };
+//     };
+//     if (count === 0) {
+//         return true;
+//     };
+//     return false;
+// }
+
+// console.log(validParentheses("()"));
+// console.log(validParentheses( "())" ));
+
+// Test.assertEquals(validParentheses( "()" ), true);
+// Test.assertEquals(validParentheses( "())" ), false);
