@@ -306,6 +306,17 @@
 
 // }
 
+//========== Best Solutin =========
+
+// function domainName(url) {
+//     const str = url.replace("http://", "")
+//                    .replace("www.", "")
+//                    .replace("https://", "");
+//     return str.split(".")[0];
+    
+
+// }
+
 // console.log(domainName("http://google.com"));
 // console.log(domainName("http://google.co.jp"));
 // console.log(domainName("www.xakep.ru"));
