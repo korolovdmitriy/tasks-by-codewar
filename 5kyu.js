@@ -372,7 +372,7 @@
 // Valid passwords will only be alphanumeric characters.
 
 // function validate(password) {
-//   return /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[0-9a-zA-Z]{6,}/g.test(password);
+//   return /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[0-9a-zA-Z]{6,}(?!.*[!@#$%^&*.,])/g.test(password);
 // }
 
 // console.log(validate('abc'));
