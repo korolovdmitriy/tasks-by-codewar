@@ -281,3 +281,37 @@
 // anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']) => ['aabb', 'bbaa']
 // anagrams('racer', ['crazer', 'carer', 'racar', 'caers', 'racer']) => ['carer', 'racer']
 // anagrams('laser', ['lazing', 'lazy',  'lacer']) => []
+
+
+
+// ======= Extract the domain name from a URL ===========
+// Write a function that when given a URL as a string, parses out just the domain name and returns
+// it as a string.For example:
+// domainName("http://github.com/carbonfive/raygun") == "github" 
+// domainName("http://www.zombie-bites.com") == "zombie-bites"
+// domainName("https://www.cnet.com") == "cnet"
+
+
+// function domainName(url) {
+//     let resultStr = [];
+//     const str = url.replace("http://", "").replace("www.", "").replace("https://", "");
+
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i] === ".") {
+//             return resultStr.join("");
+//         }
+
+//         resultStr.push(str[i]);
+//     };
+
+// }
+
+// console.log(domainName("http://google.com"));
+// console.log(domainName("http://google.co.jp"));
+// console.log(domainName("www.xakep.ru"));
+// console.log(domainName("https://youtube.com"));
+
+// Test.assertEquals(domainName("http://google.com"), "google");
+// Test.assertEquals(domainName("http://google.co.jp"), "google");
+// Test.assertEquals(domainName("www.xakep.ru"), "xakep");
+// Test.assertEquals(domainName("https://youtube.com"), "youtube");
