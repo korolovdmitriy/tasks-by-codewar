@@ -148,6 +148,40 @@
 // ALGORITHMS
 
 
+// function cakes(recipe, available) {
+//     const recipeIngredients = Object.keys(recipe);
+//     const recipeAmounts = Object.values(recipe);
+//     const availableIngredients = Object.keys(available);
+//     const availableAmouts = Object.values(available);
+//     let count = 0;
+//     let totalCount = 0;
+
+//     for (const ingredient of recipeIngredients) {
+//         if (availableIngredients.includes(ingredient)) {
+//             count = Math.floor(availableAmouts[availableIngredients.indexOf(ingredient)] /
+//                 recipeAmounts[recipeIngredients.indexOf(ingredient)]);
+            
+//             if ((count >=1 && count < totalCount) || (count >=1 && totalCount === 0)) {
+//                 totalCount = count;
+                
+//             };
+//             if (count === 0) {
+//                 return 0;
+//             };
+//             continue;
+//         };
+//         return 0;
+//     };
+    
+//     return totalCount;
+// }
+
+
+// console.log(cakes({ flour: 500, sugar: 200, eggs: 1 }, { flour: 1200, sugar: 1200, eggs: 5, milk: 200 }));
+// console.log(cakes({ apples: 3, flour: 300, sugar: 150, milk: 100, oil: 100 }, { sugar: 500, flour: 2000, milk: 2000 }));
+// console.log(cakes({ "apples": 3, "flour": 300, "sugar": 150, "milk": 100, "oil": 100 },
+//     { "sugar": 500, "flour": 2000, "milk": 2000, "apples": 15, "oil": 20 }));
+
 
 
 // ======= Valid Parentheses =======
