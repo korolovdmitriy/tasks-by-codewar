@@ -284,9 +284,38 @@
 // Example: The binary representation of 1234 is 10011010010,
 // so the function should return 5 in this case
 
-var countBits = function(n) {
-  if (n === 0) {return 0};
-  return n.toString(2).match(new RegExp("1", "gi")).length;
-};
+// var countBits = function(n) {
+//   if (n === 0) {return 0};
+//   return n.toString(2).match(new RegExp("1", "gi")).length;
+// };
 
-console.log(countBits(10));
+// console.log(countBits(10));
+
+
+
+// ====== Duplicate Encoder ======
+// The goal of this exercise is to convert a string to a new string 
+// where each character in the new string is "(" if that character 
+// appears only once in the original string, or ")" if that character 
+// appears more than once in the original string.Ignore capitalization 
+// when determining if a character is a duplicate.
+// Examples
+// "din"      =>  "((("
+// "recede"   =>  "()()()"
+// "Success"  =>  ")())())"
+// "(( @"     =>  "))((" 
+
+
+// function duplicateEncode(word) {
+//     let result = "";
+//     for (const char of word) {
+//         if (word.match(new RegExp(char, "gi")).length === 1) {
+//             result += "(";
+//             continue;
+//         };
+//         result += ")";
+//     };
+//     return result;
+// }
+
+// console.log(duplicateEncode("Success"));
