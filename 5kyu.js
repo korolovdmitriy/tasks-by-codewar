@@ -342,14 +342,17 @@
 // scramble('katas', 'steak') ==> False
 
 // function scramble(str1, str2) {
+//     let array = str1.split("");
 //     for (const char of str2) {
-//         if (!str1.includes(char)) {
+//         if (!array.includes(char)) {
 //             return false;
 //         };
+//         array.splice(array.indexOf(char), 1);
 //     };
 //     return true;
 // }
 
+// console.log(scramble('scriptjavx', 'javascript')); //false)
 // console.log(scramble('rkqodlw', 'world')); //true)
 // console.log(scramble('cedewaraaossoqqyt', 'codewars')); //true)
 // console.log(scramble('katas', 'steak')); //false);
