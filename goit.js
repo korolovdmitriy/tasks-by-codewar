@@ -351,3 +351,9 @@ const users = [
 // };
 
 // console.log(getActiveUsers(users));
+
+// Задача. Неактивные пользователи
+const getInactiveUsers = (users) => {
+   return users.filter(user => !user.isActive);
+};
+console.table(getInactiveUsers(users));
