@@ -337,23 +337,41 @@ const users = [
 
 // Список друзей
 // const getFriends = (users) => {
-//    const usersFriends = users.flatMap(user => user.friends);
+//   const usersFriends = users.flatMap(user => user.friends);
 //   const usersUniqueFriends = usersFriends.filter((user, index, array) => array.indexOf(user) === index);
 //   return usersUniqueFriends;
 // };
 // console.log(getFriends(users));
 
 
-
 // Задача. Активные пользователи
+
 // const getActiveUsers = (users) => {
 //     return users.filter(user => user.isActive);
 // };
 
 // console.log(getActiveUsers(users));
 
+
 // Задача. Неактивные пользователи
-const getInactiveUsers = (users) => {
-   return users.filter(user => !user.isActive);
-};
-console.table(getInactiveUsers(users));
+
+// const getInactiveUsers = (users) => {
+//    return users.filter(user => !user.isActive);
+// };
+// console.table(getInactiveUsers(users));
+
+
+
+// Задача.Пользователи и друзья
+// Дополни функцию getNamesSortedByFriendCount(users) так,
+// чтобы она возвращала массив имён пользователей отсортированный 
+// по возрастанию количества их друзей(свойство friends).
+
+
+// const getNamesSortedByFriendCount = users => {
+//     return [...users]
+//         .sort((firstUser, secondUser) => firstUser.friends.length - secondUser.friends.length)
+//         .map(user => user.name);
+// };
+
+// console.log(getNamesSortedByFriendCount(users));
