@@ -336,9 +336,19 @@
 //  persistence(4) === 0 // because 4 is already a one-digit number
 
 // function persistence(num) {
-//    //code me
+//     let count = 0;
+//     while (num.toString().length > 1) {
+//     let result = num
+//         .toString()
+//         .split("")
+//         .reduce((total, number) => total = total * Number(number), 1);
+//         num = result;
+//         count++;              
+//     };
+//      return count;
 // }
 
-// console.log(persistence(39));
-// console.log(persistence(0));
-// console.log(persistence(999));
+// console.log(persistence(39)); //3
+// console.log(persistence(4)); //0
+// console.log(persistence(25)); // 2
+// console.log(persistence(999)); // 4

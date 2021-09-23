@@ -2,6 +2,7 @@
 // Write a function that accepts two arguments: an array/list of integers and another integer (n).
 // Determine the number of times where two integers in the array have a difference of n.
 
+
 // const intDiff = (arr, n) => {
 
 //   let result = 0;
