@@ -341,7 +341,7 @@
 //     let result = num
 //         .toString()
 //         .split("")
-//         .reduce((total, number) => total = total * Number(number), 1);
+//         .reduce((total, number) => total * Number(number), 1);
 //         num = result;
 //         count++;              
 //     };

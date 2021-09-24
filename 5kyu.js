@@ -378,3 +378,62 @@
 // }
 
 // console.log(validate('abc'));
+
+
+// ========== String incrementer =========
+// Your job is to write a function which increments a string, to create a new string.
+// If the string already ends with a number, the number should be incremented by 1.
+// If the string does not end with a number. the number 1 should be appended to the new string.
+// Examples:
+// foo -> foo1
+// foobar23 -> foobar24
+// foo0042 -> foo0043
+// foo9 -> foo10
+// foo099 -> foo100
+// Attention: If the number has leading zeros the amount of digits should be considered.
+
+// function incrementString(strng) {
+//     const numbers = strng.match(/\d+/, "g");
+//     const string = strng.match(/[^\d]+/, "g");
+ 
+//     if (numbers === null && string === null) {
+//         return "1";
+//     };
+//     if (numbers === null) {
+//         return strng + "1";
+//     };
+
+//     const resNumber = numbers => {        
+//         for (let i = numbers.length - 1; i >= 0; i--) {
+    
+//             if (Number(numbers[i]) !== 9) {
+//                 numbers[i] ++;
+//                 return numbers;
+//             };
+
+//             if (Number(numbers[i]) === 9 && i !== 0) {
+//                  numbers[i] = 0;
+//             };
+            
+//             if (Number(numbers[i]) === 9 && i === 0) {
+//                numbers[i] = 0;
+//                  numbers.unshift(1);
+//                  return numbers;
+//             };
+//         };
+//     };
+
+//     if (string === null) {
+//         return resNumber(numbers[0].split("")).join("");
+//     };
+
+//     return string.join("") + resNumber(numbers[0].split("")).join("");
+// }
+
+// console.log(incrementString("foobar000")); // "foobar001"
+// console.log(incrementString("foo")); // foo1");
+// console.log(incrementString("foobar001")); // foobar002");
+// console.log(incrementString("foobar99")); // foobar100");
+// console.log(incrementString("foobar099")); // foobar100");
+// console.log(incrementString("")); // 1");
+// console.log(incrementString("55")); // 56");
