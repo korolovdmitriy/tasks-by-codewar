@@ -352,15 +352,34 @@
 //     return true;
 // }
 
-// console.log(scramble('scriptjavx', 'javascript')); //false)
-// console.log(scramble('rkqodlw', 'world')); //true)
-// console.log(scramble('cedewaraaossoqqyt', 'codewars')); //true)
-// console.log(scramble('katas', 'steak')); //false);
-// console.log(scramble('scriptjava', 'javascript')); //true)
-// console.log(scramble('scriptingjava', 'javascript')); //true)
-// console.log(scramble('scriptsjava', 'javascripts')); //true)
-// console.log(scramble('jscripts', 'javascript')); //false)
-// console.log(scramble('aabbcamaomsccdd', 'commas')); //true)
+
+// function scramble(str1, str2) {
+
+//     const getCharFrequencies = str => 
+//     str.split("").reduce((container, char) => {
+//             (container[char] += 1) || (container[char] = 1);
+//             return container;
+//         }, 
+//         {});
+    
+//     const obj1 = getCharFrequencies(str1);
+//     const obj2 = getCharFrequencies(str2);
+
+//     return (  
+//          Object.entries(obj2).every((char) => obj1[char[0]] >= char[1])
+//     );
+
+// };
+
+console.log(scramble('scriptjavx', 'javascript')); //false)
+console.log(scramble('rkqodlw', 'world')); //true)
+console.log(scramble('cedewaraaossoqqyt', 'codewars')); //true)
+console.log(scramble('katas', 'steak')); //false);
+console.log(scramble('scriptjava', 'javascript')); //true)
+console.log(scramble('scriptingjava', 'javascript')); //true)
+console.log(scramble('scriptsjava', 'javascripts')); //true)
+console.log(scramble('jscripts', 'javascript')); //false)
+console.log(scramble('aabbcamaomsccdd', 'commas')); //true)
 
 
 
