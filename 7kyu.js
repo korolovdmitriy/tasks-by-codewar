@@ -107,9 +107,9 @@
 // number([]) // => []
 // number(["a", "b", "c"]) // => ["1: a", "2: b", "3: c"]
 
+
 // var number=function(array){
-//     array.map((element, index, array) => array[index] = (index + 1) + ": " + element);
-//     return array;
+//     return  array.map((element, index, array) => array[index] = (index + 1) + ": " + element);
 // }
 
 
