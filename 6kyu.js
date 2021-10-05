@@ -1,5 +1,5 @@
 // ======== Array.diff ========
-// Your goal in this kata is to implement a difference function, 
+// Your goal in this kata is to implement a difference function,
 // which subtracts one list from another and returns the result.
 // It should remove all values from list a, which are present in list b keeping their order.
 // arrayDiff([1,2],[1]) == [2]
@@ -24,10 +24,9 @@
 //     return a;
 // }
 
-
 // ======== Sum of Digits / Digital Root ========
 // Digital root is the recursive sum of all the digits in a number.
-// Given n, take the sum of the digits of n.If that value has more than one digit, 
+// Given n, take the sum of the digits of n.If that value has more than one digit,
 // continue reducing in this way until a single - digit number is produced.The input will be a non - negative integer.
 // Examples
 //     16  -->  1 + 6 = 7
@@ -53,11 +52,10 @@
 //   return n;
 // }
 
-
 // ======== Who likes it? ========
-// You probably know the "like" system from Facebook and other pages.People can "like" blog posts, pictures or other items. 
+// You probably know the "like" system from Facebook and other pages.People can "like" blog posts, pictures or other items.
 // We want to create the text that should be displayed next to such an item.
-// Implement the function likes which takes an array containing the names of people that like an item. 
+// Implement the function likes which takes an array containing the names of people that like an item.
 // It must return the display text as shown in the examples:
 
 // likes [] -- must be "no one likes this"
@@ -68,26 +66,24 @@
 
 // For 4 or more names, the number in and 2 others simply increases.
 
-
 // function likes(names) {
 //  switch (names.length) {
 //      case 0:
 //      return "no one likes this";
-     
+
 //      case 1:
 //      return `${names[0]} likes this`;
-     
+
 //      case 2:
 //      return `${names[0]} and ${names[1]} like this`;
-     
+
 //      case 3:
 //      return `${names[0]}, ${names[1]} and ${names[2]} like this`;
-     
+
 //      default:
 //      return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`;
 //  }
 // }
-
 
 // ======== Find the odd int ========
 // Given an array of integers, find the one that appears an odd number of times.
@@ -102,25 +98,24 @@
 // function findOdd(A) {
 //   let count = 0;
 //   for (const element of A) {
-    
+
 //     for (let i = 0; i < A.length; i ++) {
 
 //       if (element === A[i]) {
 //           count ++;
 //       }
 //     }
-    
+
 //     if (count % 2 !== 0) {
 //       return element;
 //     }
-    
+
 //     count = 0;
-    
+
 //   }
-  
+
 //   return 0;
 // }
-
 
 // ======== Create Phone Number ========
 // Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number.
@@ -133,7 +128,6 @@
 //   return `(${numbers.slice(0, 3).join("")}) ${numbers.slice(3, 6).join("")}-${numbers.slice(6).join("")}`;
 // }
 
-
 // ======== Multiples of 3 or 5 ========
 // If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
 // Finish the solution so that it returns the sum of all the multiples of 3 or 5 below the number passed in.
@@ -142,13 +136,13 @@
 
 // function solution(number){
 //   let sum = 0;
-  
+
 //   if (number < 0) {
 //     return 0;
 //   }
-  
+
 //   for (let i = 1; i < number; i++) {
-    
+
 //     if (i % 3 === 0 || i % 5 === 0) {
 //       sum += i;
 //     }
@@ -156,15 +150,14 @@
 //   return sum;
 // }
 
-
 // ======== Stop gninnipS My sdroW! ========
 // Write a function that takes in a string of one or more words, and returns the same string,
 // but with all five or more letter words reversed(like the name of this kata).
 // Strings passed in will consist of only letters and spaces.
 // Spaces will be included only when more than one word is present.
 // Examples:
-// spinWords("Hey fellow warriors") => "Hey wollef sroirraw" 
-// spinWords("This is a test") => "This is a test" 
+// spinWords("Hey fellow warriors") => "Hey wollef sroirraw"
+// spinWords("This is a test") => "This is a test"
 // spinWords("This is another test") => "This is rehtona test"
 
 // function spinWords(string){
@@ -172,7 +165,7 @@
 //     let result = [];
 
 //     for (const element of array) {
-                
+
 //     if (element.length >= 5) {
 //         result.push(element.split("").reverse("").join(""));
 //         continue;
@@ -185,10 +178,9 @@
 
 // console.log(spinWords("Welcome"));
 
-
 // ======== Find The Parity Outlier ========
 // You are given an array(which will have a length of at least 3,
-// but could be very large) containing integers.The array is either entirely 
+// but could be very large) containing integers.The array is either entirely
 // comprised of odd integers or entirely comprised of even integers except for a single integer N.
 // Write a method that takes the array as an argument and returns this "outlier" N.
 // Examples
@@ -197,7 +189,6 @@
 // [160, 3, 1719, 19, 11, 13, -21]
 // Should return: 160 (the only even number)
 
-
 // function findOutlier(integers) {
 //     let evenNumbers = 0;
 //     let oddNumbers = 0;
@@ -205,7 +196,7 @@
 //     let resultOdd = 0;
 
 //     for (const element of integers) {
-             
+
 //         if (element % 2 === 0) {
 //             evenNumbers++;
 //             resultEven = element;
@@ -227,10 +218,9 @@
 // console.log(findOutlier([1, 2, 3])); //2
 // console.log(findOutlier([2,6,8,10,3])); //3
 
-
 // ======== Count the number of Duplicates ========
 // Count the number of Duplicates
-// Write a function that will return the count of distinct case -insensitive alphabetic characters and numeric digits that occur more than once in the input string. 
+// Write a function that will return the count of distinct case -insensitive alphabetic characters and numeric digits that occur more than once in the input string.
 // The input string can be assumed to contain only alphabets(both uppercase and lowercase) and numeric digits.
 
 // Example
@@ -248,9 +238,9 @@
 //     let control = "";
 
 //     for (let i = 0; i < array.length; i++) {
-        
+
 //         for (let x = i + 1; x < array.length; x++) {
-        
+
 //             if (array[i] === array[x]) {
 //                 array.splice(x, 1);
 //                 x--;
@@ -260,11 +250,11 @@
 
 //         if (array[i] === control) {
 //             count++;
-//         }       
+//         }
 //     }
 
 //     return count;
-    
+
 // }
 
 // console.log(duplicateCount("")); //0
@@ -274,11 +264,9 @@
 // console.log(duplicateCount("Indivisibility")); //1
 // console.log(duplicateCount("Indivisibilities")); //2
 
-
-
 //  ======= Bit Counting =======
 // Write a function that takes an integer as input,
-// and returns the number of bits that are equal to one in the binary 
+// and returns the number of bits that are equal to one in the binary
 // representation of that number.You can guarantee that input is non -
 // negative.
 // Example: The binary representation of 1234 is 10011010010,
@@ -291,20 +279,17 @@
 
 // console.log(countBits(10));
 
-
-
 // ====== Duplicate Encoder ======
-// The goal of this exercise is to convert a string to a new string 
-// where each character in the new string is "(" if that character 
-// appears only once in the original string, or ")" if that character 
-// appears more than once in the original string.Ignore capitalization 
+// The goal of this exercise is to convert a string to a new string
+// where each character in the new string is "(" if that character
+// appears only once in the original string, or ")" if that character
+// appears more than once in the original string.Ignore capitalization
 // when determining if a character is a duplicate.
 // Examples
 // "din"      =>  "((("
 // "recede"   =>  "()()()"
 // "Success"  =>  ")())())"
-// "(( @"     =>  "))((" 
-
+// "(( @"     =>  "))(("
 
 // function duplicateEncode(word) {
 //     let result = "";
@@ -320,19 +305,17 @@
 
 // console.log(duplicateEncode("Success"));
 
-
-
 // ====== Persistent Bugger =======
-// Write a function, persistence, that takes in a positive parameter num 
-// and returns its multiplicative persistence, which is the number of times 
+// Write a function, persistence, that takes in a positive parameter num
+// and returns its multiplicative persistence, which is the number of times
 // you must multiply the digits in num until you reach a single digit.
 // For example:
 //  persistence(39) === 3 // because 3*9 = 27, 2*7 = 14, 1*4=4
 //                       // and 4 has only one digit
-  
+
 //  persistence(999) === 4 // because 9*9*9 = 729, 7*2*9 = 126,
 //                         // 1*2*6 = 12, and finally 1*2 = 2
-                  
+
 //  persistence(4) === 0 // because 4 is already a one-digit number
 
 // function persistence(num) {
@@ -343,7 +326,7 @@
 //         .split("")
 //         .reduce((total, number) => total * Number(number), 1);
 //         num = result;
-//         count++;              
+//         count++;
 //     };
 //      return count;
 // }
@@ -354,7 +337,7 @@
 // console.log(persistence(999)); // 4
 
 // ======== Extract Nested Object Reference =========
-// You are given a complex object that has many deeply nested variables.You don't want to go 
+// You are given a complex object that has many deeply nested variables.You don't want to go
 // the usual if obj.property == null route.
 // Create a prototype method that given a nested path, either return the value or undefined.
 
@@ -372,7 +355,7 @@
 //     hash(string) {
 //         return eval(`this.${string}`);
 //     }
-   
+
 // };
 
 // Object.prototype.hash = function(string) {
@@ -388,3 +371,45 @@
 // console.log(obj.hash('person.history.bio')); // { funFact: 'I like fishing.' }
 // console.log(obj.hash('person.history.homeStreet')); // undefined
 // console.log(obj.hash('person.animal.pet.needNoseAntEater')); // undefined
+
+// ======= Who has the most money? =======
+
+// You're going on a trip with some students and it's up to you to keep track of
+// how much money each Student has.A student is defined like this:
+
+// class Student {
+//   constructor(name, fives, tens, twenties) {
+//     this.name = name;
+//     this.fives = fives;
+//     this.tens = tens;
+//     this.twenties = twenties;
+//   }
+// }
+
+// const andy = new Student("Andy", 0, 0, 2);
+// const stephen = new Student("Stephen", 0, 4, 0);
+// const eric = new Student("Eric", 8, 1, 0);
+// const david = new Student("David", 2, 0, 1);
+// const phil = new Student("Phil", 0, 2, 1);
+// const cam = new Student("Cameron", 2, 2, 0);
+// const geoff = new Student("Geoff", 0, 3, 0);
+
+
+
+// function mostMoney(students) {
+//     let arrayTotal = [];
+//     students.forEach(studet => {
+//         const total = studet.fives * 5 + studet.tens * 10 + studet.twenties * 20;
+//         arrayTotal.push([total, studet.name]);
+//     });
+//     const result = arrayTotal.sort((a, b) => b[0] - a[0]);
+//     if (result.every((element, index ,array) => element[0] === array[0][0] && array.length !==1)) {
+//         return "all";
+//     }
+//     return result[0][1];
+// }
+
+// console.log(mostMoney([andy, stephen, eric, david, phil])); //"Eric
+// console.log(mostMoney([cam, geoff, andy, stephen, eric, david, phil])); //"Eric
+// console.log(mostMoney([andy]));
+// console.log(mostMoney([cam, geoff]));
