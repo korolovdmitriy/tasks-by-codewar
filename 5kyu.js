@@ -371,15 +371,15 @@
 
 // };
 
-console.log(scramble('scriptjavx', 'javascript')); //false)
-console.log(scramble('rkqodlw', 'world')); //true)
-console.log(scramble('cedewaraaossoqqyt', 'codewars')); //true)
-console.log(scramble('katas', 'steak')); //false);
-console.log(scramble('scriptjava', 'javascript')); //true)
-console.log(scramble('scriptingjava', 'javascript')); //true)
-console.log(scramble('scriptsjava', 'javascripts')); //true)
-console.log(scramble('jscripts', 'javascript')); //false)
-console.log(scramble('aabbcamaomsccdd', 'commas')); //true)
+// console.log(scramble('scriptjavx', 'javascript')); //false)
+// console.log(scramble('rkqodlw', 'world')); //true)
+// console.log(scramble('cedewaraaossoqqyt', 'codewars')); //true)
+// console.log(scramble('katas', 'steak')); //false);
+// console.log(scramble('scriptjava', 'javascript')); //true)
+// console.log(scramble('scriptingjava', 'javascript')); //true)
+// console.log(scramble('scriptsjava', 'javascripts')); //true)
+// console.log(scramble('jscripts', 'javascript')); //false)
+// console.log(scramble('aabbcamaomsccdd', 'commas')); //true)
 
 
 
@@ -456,3 +456,37 @@ console.log(scramble('aabbcamaomsccdd', 'commas')); //true)
 // console.log(incrementString("foobar099")); // foobar100");
 // console.log(incrementString("")); // 1");
 // console.log(incrementString("55")); // 56");
+
+
+
+// ======= Number of trailing zeros of N! ======
+// Write a program that will calculate the number of trailing zeros
+// in a factorial of a given number.
+// N! = 1 * 2 * 3 * ... * N
+// Be careful 1000! has 2568 digits...
+// For more info, see: http://mathworld.wolfram.com/Factorial.html
+// Examples
+// zeros(6) = 1
+// # 6! = 1 * 2 * 3 * 4 * 5 * 6 = 720 --> 1 trailing zero
+// zeros(12) = 2
+// # 12! = 479001600 --> 2 trailing zeros
+// Hint: You're not meant to calculate the factorial. 
+// Find another way to find the number of zeros.
+
+// function zeros (n) {
+//     let result = 0;
+//     let x = 1;
+
+// while(n < 5**x) {
+//   n /= 5**x;
+//     result += Math.floor(n);
+//     console.log(n);
+//     console.log(result);
+//     }
+//     return result;
+// }
+
+// // console.log(zeros(0)); //0, "Testing with n = 0")
+// // console.log(zeros(5)); //1, "Testing with n = 5")
+// // console.log(zeros(6)); //1, "Testing with n = 6")
+// console.log(zeros(30)); //7, "Testing with n = 30")

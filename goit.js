@@ -8,7 +8,7 @@
 // function getAllPropValues(propName) {
 //   // Change code below this line
 // let propValues = [];
-  
+
 //     for (const product of products) {
 //         let props = Object.keys(product);
 //         console.log(props);
@@ -19,7 +19,7 @@
 //         continue;
 //     };
 //     };
-  
+
 // return propValues;
 
 //   // Change code above this line
@@ -63,7 +63,7 @@
 //     console.log(typeof(a));
 //     if (typeof a === "number" && typeof b === "number") {
 //         return Math.min(a, b);
-        
+
 //     };
 //     return "Вы ввели не число";
 // };
@@ -73,10 +73,10 @@
 
 
 // function min(a, b) {
-    
+
 //     if (typeof a !== "number" || typeof b !== "number") {
 //         return "Вы ввели не число";
-                
+
 //     };
 //     return a < b ? a : b;
 // };
@@ -194,7 +194,7 @@
 //         document.body.style.background = color;
 //         return;
 //     }
-    
+
 //     console.error('Такой цвет не найден');
 //     document.body.style.background = 'red';
 // }
@@ -231,10 +231,10 @@
 //   pizzas: ['Ultracheese', 'Smoked', 'Four meats'],
 //   order(pizzaName, onSuccess, onError) {
 //   if (!this.pizzas.includes(pizzaName)) {
-    
+
 //     return onError(`There is no pizza with a name ${pizzaName} in the assortment.`);
 //   }
-      
+
 //       return onSuccess(pizzaName);
 //   },
 // };
@@ -451,7 +451,48 @@ const users = [
 //     .flatMap (user => user.friends)
 //     .filter((user, index, arr) => arr.indexOf(user) === index)
 //     .sort((firstUser, secondUser) => firstUser.localeCompare(secondUser));
-   
+
 // };
 
 // console.log(getSortedFriends(users));
+
+
+
+// class Car {
+//   // Change code below this line
+//   static MAX_PRICE = 50000;
+//   #price;
+
+//   constructor({ price }) {
+//     this.#price = price;
+//   }
+
+//   get price() {
+//     return this.#price;
+//   }
+
+//   set price(newPrice) {
+//       if (newPrice < Car.MAX_PRICE) {
+        
+//     this.#price = newPrice;
+//     };
+     
+//   }
+//   // Change code above this line
+// }
+
+// const audi = new Car({ price: 35000 });
+// console.log(audi.price); // 35000
+
+// audi.price = 49000;
+// console.log(audi.price); // 49000
+
+// audi.price = 51000;
+// console.log(audi.price); // 49000
+
+// const textInput = document.querySelector(".text-input");
+// const output = document.querySelector(".output");
+
+// textInput.addEventListener("input", (event) => {
+//   output.textContent = event.currentTarget.value;
+// // });
