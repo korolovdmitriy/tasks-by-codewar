@@ -510,7 +510,7 @@
 // For C: The result is freed.
 
 
-function orderWeight(strng) {
+// function orderWeight(strng) {
 
     ////// 1st solition
     // let result = [];
@@ -522,21 +522,21 @@ function orderWeight(strng) {
     //     result.push({ num: numOfEl, value: el });
     
     // });
-    // result.sort((a, b) => a.num - b.num || a.value - b.value || -(a.value - b.value)).map(el => sortRes.push(el.value));
+    // result.sort((a, b) => a.num - b.num || a.value > b.value || -(a.value < b.value)).map(el => sortRes.push(el.value));
     // return sortRes.join(' ');
 
 
     ////// 2nd solition
-    function sumOfNumber(num) {
-        return num.split('').reduce((acc, num) => acc += num * 1, 0);
-    }
+    // function sumOfNumber(num) {
+    //     return num.split('').reduce((acc, num) => acc += num * 1, 0);
+    // }
    
-    return strng.split(' ').sort((a, b) => sumOfNumber(a) - sumOfNumber(b) || a - b || -(a - b)).join(' ')
-};
+    // return strng.split(' ').sort((a, b) => sumOfNumber(a) - sumOfNumber(b) || a > b || -(a < b)).join(' ')
+// };
 
-console.log(orderWeight("103 123 4444 99 2000")) //, "2000 103 123 4444 99")
-console.log(orderWeight("2000 10003 1234000 44444444 9999 11 11 22 123")) //, "11 11 2000 10003 22 123 1234000 44444444 9999")
+// console.log(orderWeight("103 123 4444 99 2000")) //, "2000 103 123 4444 99")
+// console.log(orderWeight("2000 10003 1234000 44444444 9999 11 11 22 123")) //, "11 11 2000 10003 22 123 1234000 44444444 9999")
 
 
-console.log(10003 > 22);
-console.log(2000 >  11);
+// console.log('10003' > '22');
+// console.log('2000' >  '11');
