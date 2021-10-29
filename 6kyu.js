@@ -452,21 +452,28 @@
 
 
 // var uniqueInOrder = function (iterable) {
-//     let arrayTemp = [];
+    // let arrayTemp = [];
  
-//     if (Array.isArray(iterable)) {
-//         arrayTemp = iterable;
-//     } else {
-//         arrayTemp = iterable.split('');
-//        }
+    // if (Array.isArray(iterable)) {
+    //     arrayTemp = iterable;
+    // } else {
+    //     arrayTemp = iterable.split('');
+    //    }
         
-//     for (let i = 0; i < arrayTemp.length; i++) {
-//         if (arrayTemp[i] === arrayTemp[i + 1]) {
-//             arrayTemp.splice(i + 1, 1);
-//             i--;        
-//         }
-//     }
-//     return arrayTemp;
+    // for (let i = 0; i < arrayTemp.length; i++) {
+    //     if (arrayTemp[i] === arrayTemp[i + 1]) {
+    //         arrayTemp.splice(i + 1, 1);
+    //         i--;        
+    //     }
+    // }
+    // return arrayTemp;
+// }
+
+
+// second solution
+
+// var uniqueInOrder = function (iterable) {
+//     return [...iterable].filter((el, index, array) => el !==array[index +1])
 // }
 
 
