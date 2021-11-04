@@ -529,4 +529,3 @@
 // console.log(isPangram("The quick brown fox jumps over the lazy dog."));
 // console.log(isPangram("This is not a pangram."));
 
-// return /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[0-9a-zA-Z]{6,}(?!.*[!@#$%^&*.,])/g.test(password);
