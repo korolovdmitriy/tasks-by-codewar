@@ -529,13 +529,3 @@
 //   greeting => console.log(greeting),
 //   error => console.error(error)
 // );
-
-<<<<<<< Updated upstream
-
-=======
-let x = 10;
-let y = 20;
-
-[x, y] = [y, x];
-console.log(x,y);
->>>>>>> Stashed changes
